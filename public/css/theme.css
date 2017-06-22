@@ -1,0 +1,55 @@
+body {
+	background-color: #F2B06E!important;
+	color: #924DCD!important;
+}
+
+nav {
+	background-color: #f1904e!important;
+}
+
+a {
+	color: white;
+	text-decoration: underline;
+}
+
+a.btn {
+	text-decoration: none;
+}
+
+.panel-default {
+	border: solid 2px #924DCD;
+}
+
+.panel-default>.panel-heading {
+	background-color: #924DCD!important;
+	color: #F2B06E;
+	font-weight: 700;
+	border-bottom: solid 2px #924DCD;
+	border-radius: 0;
+}
+
+.panel-default .panel-body {
+	background-color: #f1904e;
+	color: #641DA4;
+	font-weight: 700;	
+}
+
+.navbar-default {
+	border-bottom: solid 2px #924DCD;
+}
+
+.navbar-default .navbar-brand {
+    color: #641DA4;
+	font-weight: 700;
+	text-decoration: none;
+}
+
+.table-hover>tbody>tr:hover, .table>tbody>tr.active>td, .table>tbody>tr.active>th, .table>tbody>tr>td.active, .table>tbody>tr>th.active, .table>tfoot>tr.active>td, .table>tfoot>tr.active>th, .table>tfoot>tr>td.active, .table>tfoot>tr>th.active, .table>thead>tr.active>td, .table>thead>tr.active>th, .table>thead>tr>td.active, .table>thead>tr>th.active {
+    background-color: rgba(120,50,10,0.1);
+
+}
+
+.table>tbody>tr>td, .table>tbody>tr>th, .table>tfoot>tr>td, .table>tfoot>tr>th, .table>thead>tr>td, .table>thead>tr>th {
+    border-top: solid 1px #924DCD;
+}
+

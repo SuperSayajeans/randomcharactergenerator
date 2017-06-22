@@ -1,0 +1,27 @@
+.box-body {
+	margin-top: 8px;
+}
+
+.icon-fix {
+	width: 64px;
+	height: 64px;
+}
+
+.denied-access {
+	color: #b12!important;
+}
+
+.row-bars .form-group .rangeselector {
+	width: 33%;
+	display: inline-block;
+	box-sizing: border-box;
+}
+.row-bars .form-group label {
+	width: 30%;
+	display: inline-block;
+	box-sizing: border-box;
+	padding: 0 4px;
+}
+.row-bars .form-group label:first-child {
+	text-align: right;
+}
