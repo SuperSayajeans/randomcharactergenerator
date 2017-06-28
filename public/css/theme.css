@@ -53,3 +53,84 @@ a.btn {
     border-top: solid 1px #924DCD;
 }
 
+.traits-wrapper {
+	border: solid 2px #924DCD;
+}
+
+.traits-wrapper h3 {
+	margin: 8px;
+}
+
+.trait {
+	width: 49%;
+	display: inline-block;
+	padding: 8px;
+	box-sizing: border-box;
+}
+
+.trait span {
+	display: inline-block;
+	font-weight: 700;
+}
+
+.trait .bar {
+	width: 150px;
+	position: relative;
+	height: 4px;
+	background: #924DCD;
+	background: -webkit-linear-gradient(left, #C10, #36F); /* For Safari 5.1 to 6.0 */
+	background: -o-linear-gradient(right, #C10, #36F); /* For Opera 11.1 to 12.0 */
+	background: -moz-linear-gradient(right, #C10, #36F); /* For Firefox 3.6 to 15 */
+	background: linear-gradient(to right, #C10 , #36F); /* Standard syntax */
+	display: inline-block;
+}
+
+.trait .bar .cursor {
+	position: absolute;
+	left: 0;
+	bottom: -4px;
+	display: block;
+	width: 4px;
+	height: 12px;
+	background-color: white;
+}
+
+.charct-block {
+	width:49.8%; 
+	border:none;	
+	display: inline-block;
+	color: #924DCD; 
+	text-align: center; 
+	font-size: 30px; 
+	font-family: verdana;
+	box-sizing: border-box;
+	vertical-align: top;
+}
+
+.charct-block:first-child {
+	border-right: solid 4px #924DCD; 
+}
+
+.characteristic {
+	font-size: 16px;
+	display: inline-block;
+	width: 20%;
+	text-align: center;
+	vertical-align: top;
+}
+
+.characteristics-wrapper {
+	vertical-align: top;
+}
+
+.title-sheet {
+	color: #924DCD; 
+	text-align: center; 
+	font-family: verdana;
+}
+
+#rectangle {
+	width:100%;
+	border-style: solid; 
+	border-color: #924DCD;
+}

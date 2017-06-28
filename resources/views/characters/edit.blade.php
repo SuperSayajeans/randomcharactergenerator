@@ -112,6 +112,10 @@
                                 </div>
                             </div>
                         </div>
+                        <div class="form-group">
+                            <label for="description" class="control-label">Descrição:</label>
+                            <textarea class="form-control" name="description" id="description">{{ $data->description }}</textarea>
+                        </div>
                         <button type="submit" class="btn btn-primary">Atualizar Personagem</button>
                     </div>
                 </div>

@@ -46,3 +46,5 @@ Route::post('/characters/update', 'CharactersController@update');
 Route::get('/characters/delete/{external_id}', 'CharactersController@delete');
 Route::post('/characters/save', 'CharactersController@save');
 Route::get('/characters/ficha/{external_id}', 'CharactersController@sheet');
+
+Route::post('/comment/add','CommentsController@save');

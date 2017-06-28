@@ -134,6 +134,10 @@
                             <label class="radio-inline"><input name="rad" type="radio" value="">Opção 2</label>
                             <label class="radio-inline"><input name="rad" type="radio" value="">Opção 3</label>
                         </div>-->
+                        <div class="form-group">
+                            <label for="description" class="control-label">Descrição:</label>
+                            <textarea class="form-control" name="description" id="description"></textarea>
+                        </div>
                         <button type="button" class="btn btn-warning btn-randomize">Randomizar</button>
                         <button type="submit" class="btn btn-primary">Gerar!</button>
                     </div>

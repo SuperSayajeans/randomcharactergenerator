@@ -18,7 +18,7 @@ class CreateCharacteristicsTable extends Migration
             $table->string('icon');
             $table->string('name');
             $table->string('description');
-            $table->int('type');
+            $table->integer('type');
             $table->timestamps();
         });
     }

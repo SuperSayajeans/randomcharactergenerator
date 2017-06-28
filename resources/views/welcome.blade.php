@@ -11,6 +11,7 @@
         <link href="https://fonts.googleapis.com/css?family=Raleway:100,600" rel="stylesheet" type="text/css">
         <link href="{{ asset('public/css/app.css') }}" rel="stylesheet">
         <link href="{{ asset('public/css/main.css') }}" rel="stylesheet">
+        <link href="{{ asset('public/css/theme.css') }}" rel="stylesheet">
 
         <!-- Styles -->
         <style>
@@ -163,8 +164,27 @@
             </header>
 
             <div class="container">
+                <h1>Sistema de Criação de Personagens Aleatórios</h1>
+                <p>
+                    Bem-vindo ao sistema de criação de personagens aleatórios. Com ele, é possível você criar seu próprio personagem, atribuindo-lhe nome, raça, sexo e parâmetros psicológicos (otimista ou pessimista, humilde ou arrogante, introvertido ou extrovertido etc.) e parâmetros físicos (gordo ou magro, fraco ou forte, alto ou baixo). 
+                </p>
+                <p>
+                    Com os dados que você inseriu, o sistema vai gerar uma ficha do seu personagem contendo características que ele possui graças à forma como você criou ele.
+                </p>
+                <p>
+                    Você pode adicionar uma descrição antes ou depois que o personagem foi criado, e você também pode mostrar a ficha dele para os seus amigos para que eles possam inserir comentários no seu personagem.
+                </p>
+                <p>
+                    @if (Auth::guest())
+                        Para criar um personagem, é necessário estar <a href="{{ route('login') }}">logado</a>. Não tem uma conta? <a href="{{ route('register') }}">Faça a sua agora</a>!
+                    @else
+                        Para criar um personagem novo, <a href="characters/new">clique aqui</a>.
+                        <br>
+                        Para ver sua lista de personagens, <a href="characters">clique aqui</a>.
+                    @endif
+                </p>
                
-                <form class="form-horizontal" method="POST" action="{{ route('login') }}">
+                <!--<form class="form-horizontal" method="POST" action="{{ route('login') }}">
                     <div class="row">
                         <div class="col-md-12">
                             <div class="form-group">
@@ -269,34 +289,11 @@
                                     </div>
                                 </div>
                             </div>
-                            <!--<div class="form-group">
-                                <label for="options-1" class="control-label">Opções Checkbox</label>
-                                <br>
-                                <label class="checkbox-inline"><input name="chec" type="checkbox" value="">Opção 1</label>
-                                <label class="checkbox-inline"><input name="chec" type="checkbox" value="">Opção 2</label>
-                                <label class="checkbox-inline"><input name="chec" type="checkbox" value="">Opção 3</label>
-                            </div>
-                            <div class="form-group">
-                                <label for="options-1" class="control-label">Opções Checkbox</label>
-                                <br>
-                                <label class="checkbox-inline"><input name="chec2" type="checkbox" value="">Opção 1</label>
-                                <br>
-                                <label class="checkbox-inline"><input name="chec2" type="checkbox" value="">Opção 2</label>
-                                <br>
-                                <label class="checkbox-inline"><input name="chec2" type="checkbox" value="">Opção 3</label>
-                            </div>
-                            <div class="form-group">
-                                <label for="options-1" class="control-label">Opções Radio</label>
-                                <br>
-                                <label class="radio-inline"><input name="rad" type="radio" value="">Opção 1</label>
-                                <label class="radio-inline"><input name="rad" type="radio" value="">Opção 2</label>
-                                <label class="radio-inline"><input name="rad" type="radio" value="">Opção 3</label>
-                            </div>-->
                             <button type="button" class="btn btn-warning btn-randomize">Randomizar</button>
                             <button type="submit" class="btn btn-primary">Gerar!</button>
                         </div>
                     </div>
-                </form>
+                </form>-->
             </div>
         </div>
         <footer class="text-center" style="color: white; font-weight: 700; padding: 5px 0;">
