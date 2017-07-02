@@ -16,10 +16,10 @@ class CreateCharactersTable extends Migration
         Schema::create('characters', function (Blueprint $table) {
             $table->increments('id');
             $table->integer('id_user');
-            $table->string('name');
+            $table->string('char_name');
             $table->integer('race');
             $table->string('sex');
-            $table->integer('self-esteem');
+            $table->integer('self_esteem');
             $table->integer('lawfulness');
             $table->integer('optimism');
             $table->integer('risk');
@@ -29,6 +29,7 @@ class CreateCharactersTable extends Migration
             $table->integer('introversion');
             $table->integer('fat');
             $table->integer('height');
+            $table->integer('strenght');
             $table->string('description');
             $table->string('personal_charct_array');
             $table->string('social_charct_array');
